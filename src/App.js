@@ -6,6 +6,10 @@ import Result from './Result';
 function init(data) {
   let rows = data.split('\r\n').slice(1);
 
+  rows = rows.filter((row) => {
+    return row.length
+  });
+
   rows = rows.map(function(row) {
       const cols = row.split(',');
       return {
@@ -34,7 +38,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       const result = await fetch(
-        './data.csv',
+        '/learnlimited/data.csv',
       );
 
       const text = await result.text();
@@ -83,15 +87,19 @@ function App() {
 }
 
 function getResult(rows, search) {
-
   search = search.split(' ');
-
   return rows.filter(function(row) {
     return search.reduce(function(acc, term) {
-        term = term.toLowerCase();
-        return acc && (term === row.player.toLowerCase() || term === row.set.toLowerCase());
+        return acc && match(row, term.toLowerCase());
     }, true);
   });
+}
+
+function match(row, term) {
+  return (
+    term === row.player.toLowerCase() ||
+    term === row.set.toLowerCase()
+  );
 }
 
 export default App;
