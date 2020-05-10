@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Icon(props) {
+function ColorIcon(props) {
 
     let colors = props.colors.split('');
     colors.sort();
@@ -14,4 +14,4 @@ function Icon(props) {
     );
 }
 
-export default Icon;
+export default ColorIcon;

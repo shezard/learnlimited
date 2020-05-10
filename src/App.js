@@ -110,8 +110,6 @@ function tokenize(text) {
 
   const REGEX = /[^a-zа-яё0-9\-']+/i;
 
-  const isShortColor = !!text.match(/^[rgbwu]+$/i);
-
   const colorMap = {
     'u': 'blue',
     'r': 'red',
@@ -120,6 +118,19 @@ function tokenize(text) {
     'b': 'black',
   };
 
+  // Do not put uppercase here !
+  const setMap = {
+    'tsp': 'time spiral',
+    'isd': 'innistrad',
+    'iko': 'ikoria',
+    'inv': 'invasion',
+    'thb': 'theros beyond death',
+  };
+
+  const isShortColor = !!text.match(/^[rgbwu]+$/i);
+
+  const isSet = !!setMap[text];
+
   if(isShortColor) {
     return [
       text,
@@ -127,6 +138,13 @@ function tokenize(text) {
       ...text.split('').map(function(color) {
         return colorMap[color];
       })
+    ];
+  }
+
+  if(isSet) {
+    return [
+      text,
+      ...setMap[text].split(REGEX),
     ];
   }
 

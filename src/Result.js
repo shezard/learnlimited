@@ -1,12 +1,13 @@
 import React from 'react';
-import Icon from './Icon';
+import ColorIcon from './ColorIcon';
+import SetIcon from './SetIcon';
 
 function Result(props) {
 
     return (
         <div className="result">
             <h2>
-                {props.result.player} - {props.result.set} - <Icon colors={props.result.colors} />
+                <SetIcon set={props.result.set} /> {props.result.set} - {props.result.player} - <ColorIcon colors={props.result.colors} />
             </h2>
             <div className="links">
                 <a href={`http://youtu.be/${props.result.video_id}?t=${props.result.timestamp_draft}`}>Draft start</a>
