@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+
 import './App.css';
+import {Search} from 'js-search';
 
 import Result from './Result';
 
@@ -10,9 +12,10 @@ function init(data) {
     return row.length
   });
 
-  rows = rows.map(function(row) {
+  rows = rows.map(function(row, idx) {
       const cols = row.split(',');
       return {
+          id: idx,
           video_id: cols[0],
           set: cols[1],
           colors: cols[2],
@@ -29,7 +32,7 @@ function init(data) {
 
 function App() {
 
-  const [rows, setRows] = useState([]);
+  const [engine, setEngine] = useState(null);
   const [results, setResults] = useState([]);
 
   const [search, setSearch] = useState('');
@@ -43,8 +46,25 @@ function App() {
 
       const text = await result.text();
 
-      setRows(init(text));
+      const rows = init(text);
+
+      let engine = new Search('id');
+      engine.tokenizer = {
+        tokenize
+      }
+
+      engine.addIndex('player');
+      engine.addIndex('set');
+      engine.addIndex('colors');
+      engine.addIndex('soft');
+      engine.addIndex('format');
+
+      engine.addDocuments(rows);
+
+
+      setEngine(engine);
     }
+
     fetchData();
   }, []);
 
@@ -58,12 +78,12 @@ function App() {
         onChange={(e) => setSearch(e.target.value)}
         onKeyPress={(e) => {
           if(e.charCode === 13) {
-            setResults(getResult(rows, search));
+            setResults(engine.search(search));
           }
         }}
       />
       <button id="validate" onClick={() => {
-        setResults(getResult(rows, search));
+        setResults(engine.search(search));
       }}>
           <i className="fa fa-search"></i> Search
       </button>
@@ -86,20 +106,35 @@ function App() {
   );
 }
 
-function getResult(rows, search) {
-  search = search.split(' ');
-  return rows.filter(function(row) {
-    return search.reduce(function(acc, term) {
-        return acc && match(row, term.toLowerCase());
-    }, true);
-  });
-}
+function tokenize(text) {
 
-function match(row, term) {
-  return (
-    term === row.player.toLowerCase() ||
-    term === row.set.toLowerCase()
-  );
+  const REGEX = /[^a-zа-яё0-9\-']+/i;
+
+  const isShortColor = !!text.match(/^[rgbwu]+$/i);
+
+  const colorMap = {
+    'u': 'blue',
+    'r': 'red',
+    'w': 'white',
+    'g': 'green',
+    'b': 'black',
+  };
+
+  if(isShortColor) {
+    return [
+      text,
+      ...text.split(''),
+      ...text.split('').map(function(color) {
+        return colorMap[color];
+      })
+    ];
+  }
+
+  return text
+    .split(REGEX)
+    .filter(
+      (text) => text // Filter empty tokens
+    );
 }
 
 export default App;
