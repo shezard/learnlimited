@@ -11,8 +11,13 @@ function Result(props) {
             </h2>
             <div className="links">
                 <a href={`http://youtu.be/${props.result.video_id}?t=${props.result.timestamp_draft}`}>Draft start</a>
-                <span> - </span>
-                <a href={`http://youtu.be/${props.result.video_id}?t=${props.result.timestamp_match}`}>Match start</a>
+                {
+                    props.result.timestamp_match &&
+                        <>
+                            <span> - </span>
+                            <a href={`http://youtu.be/${props.result.video_id}?t=${props.result.timestamp_match}`}>Match start</a>
+                        </>
+                }
             </div>
             <div className="video">
                 <i className="spinner fa fa-spinner-notch fa-spin"></i>

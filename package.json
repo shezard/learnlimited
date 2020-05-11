@@ -32,5 +32,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/learnlimited/"
+  "homepage": "/learnlimited/",
+  "proxy": "http://localhost:8000"
 }
