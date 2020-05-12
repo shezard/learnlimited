@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Search } from 'js-search';
 
-import init from './lib/data';
-import tokenize from './lib/search';
+import parse from './lib/data';
+import Engine from './lib/engine';
 import Result from './Result';
 
 import './App.css';
@@ -11,6 +10,8 @@ function App() {
 
     const [engine, setEngine] = useState(null);
     const [results, setResults] = useState([]);
+    const [next, setNext] = useState(0);
+    const [total, setTotal] = useState(0);
 
     const [search, setSearch] = useState('');
 
@@ -22,22 +23,8 @@ function App() {
             );
 
             const text = await result.text();
-
-            const rows = init(text);
-
-            let engine = new Search('id');
-            engine.tokenizer = {
-                tokenize
-            }
-
-            engine.addIndex('player');
-            engine.addIndex('set');
-            engine.addIndex('colors');
-            engine.addIndex('soft');
-            engine.addIndex('format');
-
-            engine.addDocuments(rows);
-
+            const rows = parse(text);
+            const engine = new Engine(rows)
 
             setEngine(engine);
         }
@@ -48,7 +35,7 @@ function App() {
     return (
         <div className="main">
             <h1>
-                <img src="/learnlimited/logo138-transparent.png" alt="LL" /> Learn Limited
+                <img src="/learnlimited/logo512.png" alt="LL" /> Learn Limited
             </h1>
             <div className="search">
                 <input
@@ -57,12 +44,18 @@ function App() {
                     onChange={(e) => setSearch(e.target.value)}
                     onKeyPress={(e) => {
                         if (e.charCode === 13) {
-                            setResults(engine.search(search));
+                            const results = engine.search(search);
+                            setResults(results.results);
+                            setNext(results.next);
+                            setTotal(results.total);
                         }
                     }}
                 />
-                <button id="validate" onClick={() => {
-                    setResults(engine.search(search));
+                <button onClick={() => {
+                    const results = engine.search(search);
+                    setResults(results.results);
+                    setNext(results.next);
+                    setTotal(results.total);
                 }}>
                     <i className="fa fa-search"></i> Search
                 </button>
@@ -73,6 +66,17 @@ function App() {
                     const key = `${row.video_id}${row.timestamp_draft}`;
                     return <Result key={key} result={row} />
                 })}
+
+                {
+                    next < total && <div onClick={() => {
+                        const newResults = engine.search(search, next);
+                        setResults(results.concat(newResults.results));
+                        setNext(newResults.next);
+                        setTotal(newResults.total);
+                    }}>
+                        {next} / {total}
+                    </div>
+                }
             </div>
 
             <div className="disclaimer">

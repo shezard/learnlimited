@@ -16,7 +16,9 @@ const SET_MAP = {
     'inv': 'invasion',
     'thb': 'theros beyond death',
     'lrw': 'lorwyn',
-    'zen': 'zendikar'
+    'zen': 'zendikar',
+    'eld': 'throne of eldraine',
+    'm20': 'core set 2020',
 };
 
 function tokenize(text) {
