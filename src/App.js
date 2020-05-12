@@ -9,9 +9,11 @@ import './App.css';
 function App() {
 
     const [engine, setEngine] = useState(null);
-    const [results, setResults] = useState([]);
-    const [next, setNext] = useState(0);
-    const [total, setTotal] = useState(0);
+    const [results, setResults] = useState({
+        results: [],
+        next: 0,
+        total: 0,
+    });
 
     const [search, setSearch] = useState('');
 
@@ -44,38 +46,34 @@ function App() {
                     onChange={(e) => setSearch(e.target.value)}
                     onKeyPress={(e) => {
                         if (e.charCode === 13) {
-                            const results = engine.search(search);
-                            setResults(results.results);
-                            setNext(results.next);
-                            setTotal(results.total);
+                            setResults(engine.search(search));
                         }
                     }}
                 />
                 <button onClick={() => {
-                    const results = engine.search(search);
-                    setResults(results.results);
-                    setNext(results.next);
-                    setTotal(results.total);
+                    setResults(engine.search(search));
                 }}>
                     <i className="fa fa-search"></i> Search
                 </button>
             </div>
 
             <div id="results">
-                {results.map((row) => {
+                {results.results.map((row) => {
                     const key = `${row.video_id}${row.timestamp_draft}`;
                     return <Result key={key} result={row} />
                 })}
 
                 {
-                    next < total && <div onClick={() => {
-                        const newResults = engine.search(search, next);
-                        setResults(results.concat(newResults.results));
-                        setNext(newResults.next);
-                        setTotal(newResults.total);
+                    (results.next < results.total) && <button onClick={() => {
+                        const newResults = engine.search(search, results.next);
+                        setResults({
+                            results: results.results.concat(newResults.results),
+                            next: newResults.next,
+                            total: newResults.total,
+                        });
                     }}>
-                        {next} / {total}
-                    </div>
+                        <i className="fa fa-arrow-circle-down"></i> Load more videos...
+                    </button>
                 }
             </div>
 
