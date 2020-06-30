@@ -19,6 +19,9 @@ const SET_MAP = {
     'zen': 'zendikar',
     'eld': 'throne of eldraine',
     'm20': 'core set 2020',
+    'war': 'war of the spark',
+    'm19': 'core set 2019',
+    'chk': 'champion of kamigawa',
 };
 
 function tokenize(text) {
