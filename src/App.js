@@ -25,6 +25,7 @@ function App() {
             );
 
             const text = await result.text();
+            console.log(text);
             const rows = parse(text);
             const engine = new Engine(rows)
 

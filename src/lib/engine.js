@@ -20,7 +20,6 @@ let engine = function(rows) {
 }
 
 engine.prototype.search = function(term, start = 0, offset = 5) {
-    console.log(term, start, offset);
     const results = this.engine.search(term);
     return {
         results: results.slice(start, start + offset),
