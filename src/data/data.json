@@ -1,0 +1,622 @@
+[
+  {
+    "video_id": "GS86w7uP9Jk",
+    "set": "TSP",
+    "colors": "urw",
+    "timestamp_draft": 0,
+    "timestamp_match": 1489,
+    "player": "LSV",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "jV7hqbgA44I",
+    "set": "ISD",
+    "colors": "gb",
+    "timestamp_draft": 5,
+    "timestamp_match": 1182,
+    "player": "LSV",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "jV7hqbgA44I",
+    "set": "ISD",
+    "colors": "gbu",
+    "timestamp_draft": 4901,
+    "timestamp_match": 6339,
+    "player": "LSV",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "M2Jwb5_b73M",
+    "set": "IKO",
+    "colors": "gb",
+    "timestamp_draft": 5,
+    "timestamp_match": 986,
+    "player": "LSV",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "2q2H1OO1hfY",
+    "set": "IKO",
+    "colors": "ur",
+    "timestamp_draft": 0,
+    "timestamp_match": 1704,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "2q2H1OO1hfY",
+    "set": "IKO",
+    "colors": "rw",
+    "timestamp_draft": 6687,
+    "timestamp_match": 7806,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "2q2H1OO1hfY",
+    "set": "IKO",
+    "colors": "wbg",
+    "timestamp_draft": 11552,
+    "timestamp_match": 12597,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "5obJrqukaIw",
+    "set": "IKO",
+    "colors": "rw",
+    "timestamp_draft": 0,
+    "timestamp_match": 1193,
+    "player": "BenS",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "5obJrqukaIw",
+    "set": "IKO",
+    "colors": "ugr",
+    "timestamp_draft": 2989,
+    "timestamp_match": 3971,
+    "player": "BenS",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "5obJrqukaIw",
+    "set": "IKO",
+    "colors": "ugr",
+    "timestamp_draft": 7350,
+    "timestamp_match": 8737,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "e1OxFhq77VQ",
+    "set": "IKO",
+    "colors": "rb",
+    "timestamp_draft": 61,
+    "timestamp_match": 1283,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "e1OxFhq77VQ",
+    "set": "IKO",
+    "colors": "gw",
+    "timestamp_draft": 4951,
+    "timestamp_match": 6185,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "e1OxFhq77VQ",
+    "set": "IKO",
+    "colors": "bwr",
+    "timestamp_draft": 9675,
+    "timestamp_match": 10851,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "Yox--GSB364",
+    "set": "IKO",
+    "colors": "gb",
+    "timestamp_draft": 0,
+    "timestamp_match": 917,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "kdyS-3B0Ks8",
+    "set": "IKO",
+    "colors": "bwr",
+    "timestamp_draft": 0,
+    "timestamp_match": 723,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "saehW2uZs8k",
+    "set": "IKO",
+    "colors": "bwg",
+    "timestamp_draft": 0,
+    "timestamp_match": 1154,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "Evi5wxkRa5A",
+    "set": "IKO",
+    "colors": "gb",
+    "timestamp_draft": 1,
+    "timestamp_match": 627,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "8kKO5mVglUE",
+    "set": "IKO",
+    "colors": "rw",
+    "timestamp_draft": 1,
+    "timestamp_match": 853,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "7AqzzM-7rao",
+    "set": "INV",
+    "colors": "bwur",
+    "timestamp_draft": 44,
+    "timestamp_match": 1422,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "egS-IngpOSA",
+    "set": "IKO",
+    "colors": "rwb",
+    "timestamp_draft": 19,
+    "timestamp_match": 1242,
+    "player": "NicolaiBolas",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "RATghERQMAw",
+    "set": "ELD",
+    "colors": "uw",
+    "timestamp_draft": 43,
+    "timestamp_match": 2015,
+    "player": "NicolaiBolas",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "pUOWamP-FBI",
+    "set": "M20",
+    "colors": "rg",
+    "timestamp_draft": 43,
+    "timestamp_match": 3151,
+    "player": "NicolaiBolas",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "zGk534DuRhs",
+    "set": "IKO",
+    "colors": "rwu",
+    "timestamp_draft": 5,
+    "timestamp_match": 1017,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "UJuFQSHyL4U",
+    "set": "IKO",
+    "colors": "br",
+    "timestamp_draft": 7,
+    "timestamp_match": 863,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "_4N7vCaQNs8",
+    "set": "IKO",
+    "colors": "rw",
+    "timestamp_draft": 4,
+    "timestamp_match": 857,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "IfGjrldSgNg",
+    "set": "THB",
+    "colors": "wb",
+    "timestamp_draft": 0,
+    "timestamp_match": 679,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "4mKOWf_O2_0",
+    "set": "ELD",
+    "colors": "gbr",
+    "timestamp_draft": 0,
+    "timestamp_match": 735,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "d5XIwV9-VQA",
+    "set": "ELD",
+    "colors": "gb",
+    "timestamp_draft": 2,
+    "timestamp_match": 596,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "ftETL0F8sVo",
+    "set": "THB",
+    "colors": "rg",
+    "timestamp_draft": 22,
+    "timestamp_match": 1554,
+    "player": "Gaby Spartz",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "lkRnDG4wo6s",
+    "set": "LRW",
+    "colors": "gw",
+    "timestamp_draft": 16,
+    "timestamp_match": "",
+    "player": "Neal Oliver",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "frBblQv2dWI",
+    "set": "ODY",
+    "colors": "grb",
+    "timestamp_draft": 2,
+    "timestamp_match": 1516,
+    "player": "Caleb Durward",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "YyUuWxldTyY",
+    "set": "ZEN",
+    "colors": "wb",
+    "timestamp_draft": 46,
+    "timestamp_match": 1200,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "hHiVChel5GY",
+    "set": "WAR",
+    "colors": "ug",
+    "timestamp_draft": 0,
+    "timestamp_match": 272,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "pzqU5QR-iF0",
+    "set": "WAR",
+    "colors": "ub",
+    "timestamp_draft": 0,
+    "timestamp_match": 372,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "udpwT1sWXQk",
+    "set": "WAR",
+    "colors": "ub",
+    "timestamp_draft": 1,
+    "timestamp_match": 687,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "5YlqE8PVHC0",
+    "set": "WAR",
+    "colors": "gub",
+    "timestamp_draft": 1,
+    "timestamp_match": 797,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "a7fkm3mmXK8",
+    "set": "WAR",
+    "colors": "gw",
+    "timestamp_draft": 7,
+    "timestamp_match": 736,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "45mPVu0vGDw",
+    "set": "M19",
+    "colors": "wb",
+    "timestamp_draft": 3,
+    "timestamp_match": 1122,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "_Ri41TPAT0g",
+    "set": "IKO",
+    "colors": "gb",
+    "timestamp_draft": 14,
+    "timestamp_match": 1107,
+    "player": "Jamie Topples",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "mIvxCf62SJA",
+    "set": "IKO",
+    "colors": "rwu",
+    "timestamp_draft": 0,
+    "timestamp_match": 795,
+    "player": "Nummot",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "myXzTvLXn3k",
+    "set": "IKO",
+    "colors": "rwu",
+    "timestamp_draft": 0,
+    "timestamp_match": 691,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "juoPXgFj-jo",
+    "set": "CHK",
+    "colors": "rw",
+    "timestamp_draft": 11,
+    "timestamp_match": 1562,
+    "player": "NicolaiBolas",
+    "format": "bo3",
+    "soft": "mtgo"
+  },
+  {
+    "video_id": "4hEq34XkSaY",
+    "set": "IKO",
+    "colors": "rwu",
+    "timestamp_draft": 0,
+    "timestamp_match": 1038,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "4hEq34XkSaY",
+    "set": "IKO",
+    "colors": "rbw",
+    "timestamp_draft": 6105,
+    "timestamp_match": 7328,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "4hEq34XkSaY",
+    "set": "IKO",
+    "colors": "rw",
+    "timestamp_draft": 11889,
+    "timestamp_match": 13004,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "oYaUIZRTiR4",
+    "set": "IKO",
+    "colors": "rwb",
+    "timestamp_draft": 13,
+    "timestamp_match": 1201,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "oYaUIZRTiR4",
+    "set": "IKO",
+    "colors": "rug",
+    "timestamp_draft": 4126,
+    "timestamp_match": 5132,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "oYaUIZRTiR4",
+    "set": "IKO",
+    "colors": "ur",
+    "timestamp_draft": 8072,
+    "timestamp_match": 9221,
+    "player": "BenS",
+    "format": "bo3",
+    "soft": "arena"
+  },
+  {
+    "video_id": "NTzj7nPhmWI",
+    "set": "M21",
+    "colors": "uw",
+    "timestamp_draft": 0,
+    "timestamp_match": 804,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "TLMkrkCS8nM",
+    "set": "M21",
+    "colors": "ur",
+    "timestamp_draft": 9,
+    "timestamp_match": 927,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "uYqx0dPACVk",
+    "set": "M21",
+    "colors": "ur",
+    "timestamp_draft": 0,
+    "timestamp_match": 983,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "4Of9n-xgZQg",
+    "set": "M21",
+    "colors": "gb",
+    "timestamp_draft": 0,
+    "timestamp_match": 1432,
+    "player": "LordsOfLimited",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "plIkbkWcYBY",
+    "set": "M21",
+    "colors": "bw",
+    "timestamp_draft": 0,
+    "timestamp_match": 1389,
+    "player": "LordsOfLimited",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "xBaovYDfNpY",
+    "set": "M21",
+    "colors": "gw",
+    "timestamp_draft": 11,
+    "timestamp_match": 1460,
+    "player": "LordsOfLimited",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "FaZs5langzM",
+    "set": "M21",
+    "colors": "bw",
+    "timestamp_draft": 0,
+    "timestamp_match": 829,
+    "player": "Nummot",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "2M2vLmkPoGE",
+    "set": "M21",
+    "colors": "ur",
+    "timestamp_draft": 3097,
+    "timestamp_match": 3960,
+    "player": "BenS",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "2M2vLmkPoGE",
+    "set": "M21",
+    "colors": "bg",
+    "timestamp_draft": 10108,
+    "timestamp_match": 11171,
+    "player": "BenS",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "2M2vLmkPoGE",
+    "set": "M21",
+    "colors": "uw",
+    "timestamp_draft": 15953,
+    "timestamp_match": 17003,
+    "player": "BenS",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "Bie_qcuDZvs",
+    "set": "M21",
+    "colors": "rw",
+    "timestamp_draft": 0,
+    "timestamp_match": 1232,
+    "player": "LordsOfLimited",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "fCQR0wZbF-4",
+    "set": "M21",
+    "colors": "bg",
+    "timestamp_draft": 10,
+    "timestamp_match": 1345,
+    "player": "LordsOfLimited",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "h9d_1iLOU20",
+    "set": "M21",
+    "colors": "wg",
+    "timestamp_draft": 0,
+    "timestamp_match": 1018,
+    "player": "LordsOfLimited",
+    "format": "bo1",
+    "soft": "arena"
+  },
+  {
+    "video_id": "pbCM3UpiUYw",
+    "set": "M21",
+    "colors": "ur",
+    "timestamp_draft": 0,
+    "timestamp_match": 920,
+    "player": "LordsOfLimited",
+    "format": "bo3",
+    "soft": "arena"
+  }
+]

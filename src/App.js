@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import parse from './lib/data';
 import Engine from './lib/engine';
 import Result from './Result';
+import data from './data/data.json';
 
 import './App.css';
 
@@ -20,15 +21,9 @@ function App() {
 
     useEffect(() => {
         async function fetchData() {
-            const result = await fetch(
-                '/learnlimited/data.csv',
-            );
 
-            const text = await result.text();
-            console.log(text);
-            const rows = parse(text);
+            const rows = parse(data);
             const engine = new Engine(rows)
-
             setEngine(engine);
         }
 
