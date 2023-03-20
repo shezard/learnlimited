@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Learn Limited
+
+This project is a website where you can search for MTG limited youtube matches
 
 ## Available Scripts
 
